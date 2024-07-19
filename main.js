@@ -21,8 +21,8 @@ for (let i = 0; i < companies.length; i++) {
 //forEach 
 
 // companies.forEach(company => {
-//     console.log(company.name)
-// });
+//   console.log(company.name)
+// })
 
 // companies.forEach(function(company) {
 //     console.log(company.category)
@@ -30,25 +30,49 @@ for (let i = 0; i < companies.length; i++) {
 
 
 //Filter 
-//  with loop
+//get 21 and older
 
+//with loop
 //   let canDrink = [];
 //   for(let i = 0; i <= ages.length; i++) {
 //     if(ages[i] >= 21){
 //        canDrink.push(ages[i]);
 //     }
 //   }
-
 //   console.log(canDrink)
 
+
+//with filter method
 //   const canDrink = ages.filter(function(age) {
 //      if(age >= 21) {
 //         return true;
 //      }
 //   })
-
-
 //   console.log(canDrink);
 
-const canDrink = ages.filter(age => age >= 21);
-console.log(canDrink)
+
+//with filter and arrow function
+// const canDrink = ages.filter(age => age >= 21);
+// console.log(canDrink)
+
+
+//filter retail company
+//with normal function
+// const retailCompany = companies.filter(company => {
+//   if(company.category === 'Finance') {
+//      return true;
+//   }
+// });
+// console.log(retailCompany);
+
+//with arrow function
+// const retailCompany = companies.filter(company => company.category === "Retail");
+// console.log(retailCompany)
+
+//Get 80s companies
+// const eightiesCompanies = companies.filter(company => company.start >= 1980 && company.start < 1990 );
+// console.log(eightiesCompanies)
+
+//Get companies that lasted 10 years or more
+const lastedTenYears = companies.filter(company => company.end - company.start >= 10);
+console.log(lastedTenYears)
