@@ -33,13 +33,13 @@ for (let i = 0; i < companies.length; i++) {
 //get 21 and older
 
 //with loop
-//   let canDrink = [];
-//   for(let i = 0; i <= ages.length; i++) {
-//     if(ages[i] >= 21){
-//        canDrink.push(ages[i]);
-//     }
-//   }
-//   console.log(canDrink)
+  // let canDrink = [];
+  // for(let i = 0; i <= ages.length; i++) {
+  //   if(ages[i] >= 21){
+  //      canDrink.push(ages[i]);
+  //   }
+  // }
+  // console.log(canDrink)
 
 
 //with filter method
@@ -74,5 +74,11 @@ for (let i = 0; i < companies.length; i++) {
 // console.log(eightiesCompanies)
 
 //Get companies that lasted 10 years or more
-const lastedTenYears = companies.filter(company => company.end - company.start >= 10);
-console.log(lastedTenYears)
+// const lastedTenYears = companies.filter(company => company.end - company.start >= 10);
+// console.log(lastedTenYears)
+
+
+// Map Method 
+// Create array of company names 
+const companyName = companies.map(company => `${company.name} [${company.start} - ${company.end}]`)
+console.log(companyName)
