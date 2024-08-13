@@ -82,3 +82,4 @@ for (let i = 0; i < companies.length; i++) {
 // Create array of company names 
 const companyName = companies.map(company => `${company.name} [${company.start} - ${company.end}]`)
 console.log(companyName)
+
