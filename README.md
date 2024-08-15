@@ -1,1 +1,1 @@
-   Array methods Map, Filter, Reduce, forEach
+  Array methods Map, Filter, Reduce, forEach
